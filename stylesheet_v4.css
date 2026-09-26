@@ -40,11 +40,6 @@ hr {
 .tweet_footer {
   font-size: 0.85em;
 }
-
-.tweet_footer .icon {
-  font-size: 1.1em;
-}
-
 .color--lightgrey {
   color: #d9d9d9;
 }
@@ -136,6 +131,9 @@ border-bottom: none;
 .tweet_footer .row {
   width: 100%;
 }
+.tweet_footer .icon {
+  font-size: 1.1em;
+}
 
 .tweet_footer--last {
   max-width: fit-content;
@@ -221,7 +219,6 @@ border-bottom: none;
   color: black;
   border-bottom: 4px solid #1D9BF0;
 } 
-
 
 /*--temp for testing--*/
 
