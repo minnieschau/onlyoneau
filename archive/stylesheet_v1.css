@@ -1,0 +1,197 @@
+/*
+
+BEM naming convention
+block, element, modifier
+
+:root { 
+  --white: #FFFFFF;
+  --lightgrey: #EFF3F4;
+  --darkgrey: #4F6572;
+  --outlines: #d9d9d9;
+  --twitterblue: #1D9BF0;
+}
+
+/* general
+
+p {
+  margin: 0;
+}
+
+.displayname {
+  font-weight: bold;
+  color: black;
+}
+
+.username, .date {
+  color:  #4F6572;
+}
+
+.pfp {
+  border-radius: 100%;
+  width: 3.5em;
+  height: 3.5em;
+}
+
+/* twt tweet ----
+
+.tweet {
+  max-width: 25em;
+  min-width: 15em;
+  display: flex;
+  height: auto;
+  padding: 1em;
+  margin: 2em;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.tweet_content {
+  margin-left: 1em;
+}
+
+.tweet_user {
+  display: flex;
+  align-items:center;
+  justify-content:left;
+  margin-bottom: 8px;
+}
+
+.tweet_user >* {
+  margin-right: 8px;
+}
+
+.tweet_text {
+  margin-bottom: 16px;
+}
+
+.tweet_img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.tweet_footer {
+  display: flex;
+  justify-content:space-between;
+  color: #4F6572;
+  align-items: center;;
+}
+
+.icon{
+  height: 1.2em;
+  width: auto;
+}
+
+.tweet_footer > div {
+  display: flex;
+  align-items: center;;
+}
+
+.tweet_footer p {
+  font-size: 0.875em;
+  margin-left: 4px;
+}
+
+ */
+
+/* ----------------- */
+
+#workskin .tweet p {
+  margin: 0 !important;
+}
+
+#workskin .displayname {
+  font-weight: bold;
+  color: black;
+  margin-right: 8px;
+}
+
+#workskin .username,
+#workskin .date,
+#workskin .tweet_footer,
+#workskin .dot {
+  color: #4F6572;
+}
+
+#workskin .pfp {
+  border-radius: 100%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#workskin .icon {
+  height: 1.2em;
+  width: auto;
+}
+
+#workskin .container {
+  max-width: 25em;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+#workskin .container div:last-child {
+  border: none;
+}
+
+#workskin .tweet {
+  margin: 0;
+  display: flex;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#workskin .tweet_content {
+  margin-left: 12px;
+  width: 100%;
+}
+
+#workskin .tweet_user {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#workskin .tweet_user p {
+  margin-right: 4px !important;
+}
+
+#workskin .tweet_user p :not(:nth-child(3)) {
+  margin: 0px !important;
+}
+
+#workskin .tweet_img {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+#workskin .tweet_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+#workskin .tweet_footer img {
+  margin-right: 4px;
+}
+
+#workskin .tweet_footer p {
+  font-size: 0.875em;
+  display: flex;
+  align-items: center;
+}
+
+#workskin .row {
+  display: flex;
+  flex-direction: row !important;
+}
+
+#workskin .column {
+  display: flex;
+  flex-direction: column;
+}

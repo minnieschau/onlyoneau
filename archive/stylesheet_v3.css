@@ -1,0 +1,193 @@
+ .color--darkgrey {
+  color: #4F6572;
+}
+
+ .font--larger {
+  font-size: 1.25em;
+}
+
+ .displayname {
+  font-weight: bold;
+  color: black;
+}
+
+ .username,
+ .date,
+ .tweet_footer {
+  color: #4F6572;
+  font-weight:lighter !important;
+}
+
+ .font--smaller {
+  font-size: 0.875em;
+  white-space: no-wrap;
+}
+
+ .pfp {
+  border-radius: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  display: block;
+}
+
+ .icon {
+  height: 1.2em;
+  width: auto;
+  margin-right: 6px !important;
+}
+
+ .container {
+  margin: 0em auto;
+  max-width: 30em;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ .container div:last-child {
+  border: none;
+}
+
+ .row {
+  display: flex;
+  flex-direction: row;
+}
+
+ .column {
+  display: flex;
+  flex-direction: column;
+}
+
+ .hyperlink {
+  color: #1D9BF0;
+}
+
+ .tweet {
+  margin: 0;
+  padding: 1em;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+ .tweet p,
+ .account p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+ .tweet_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+ .tweet_user {
+  display: flex;
+  align-items: center;
+}
+
+ .tweet_userinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+ .tweet_text {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1em !important;
+}
+
+ .tweet_img {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+ .tweet_footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ .tweet_footer :last-child {
+  margin-right: 0;
+}
+
+ .tweet_footer p {
+  font-size: 0.875em;
+  display: flex;
+  align-items: center;
+}
+
+ .account {
+  padding: 0 1em;
+  border-bottom:1px #d9d9d9 solid;
+}
+
+ .account_header,
+ .account_tabs {
+  width: 100%;
+}
+
+ .account_userinfo {
+  margin: 0;
+  padding-top: 0;
+  margin-bottom: 1em;
+}
+
+ .account_bio,
+ .account_userdetails {
+  margin-bottom: 1em;
+}
+
+ .account_followdetails {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+ .account_followdetails div:first-child {
+  margin-right: 1em;
+}
+
+.account_tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+ padding-bottom: 12px;
+ color: #4F6572;
+}
+
+.active {
+  font-weight: bold;
+  color: black;
+  border-bottom: 4px solid #1D9BF0;
+} 
+
+ .full-images {
+  margin: 0 !important;
+  display: block;
+  line-height: 0;
+}
+
+
+
+.tweet {
+  border-bottom: 1px solid #d9d9d9;
+  background-color: beige;
+  margin: 0;
+  padding: 1em;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  position: relative;
+}
+
+.tweet_content { 
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
