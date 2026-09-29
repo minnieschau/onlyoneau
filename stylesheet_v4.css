@@ -75,6 +75,7 @@ hr {
 .wrapper p {
   margin: 0;
   line-height: 1.4;
+  font-size: 15px;
 }
 
 .wrapper :last-child {
@@ -83,7 +84,7 @@ border-bottom: none;
 
 .container_box {
   margin: 0;
-  padding: 16px;
+  padding: 12px;
   display: flex;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -156,7 +157,7 @@ border-bottom: none;
 
 .tweet_reply--first .tweet_footer,
 .tweet_reply--between .tweet_footer {
-  padding-bottom: 24px;
+  padding-bottom: 16px;
 }
 
 .tweet_reply--first .tweet_content,
@@ -170,8 +171,8 @@ border-bottom: none;
 
 .tweet_replyTo {
   color: #4F6572;
-  font-size: 13px;
-  margin-bottom: 1em !important;
+  font-size: 13px !important;
+  margin-bottom: 16px !important;
 }
 
 
@@ -228,8 +229,8 @@ border-bottom: none;
 
 
 .icons-test >* span {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background-size: 100%;
   margin-right: 4px;
   background-repeat: no-repeat;
@@ -264,7 +265,7 @@ border-bottom: none;
 
 
 .icon--more {
-  background-image: url("/images/icon_more.png");
+  background-image: url("images/icon_more.png");
 }
 
 .tweet_header {
