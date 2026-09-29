@@ -74,7 +74,6 @@ hr {
 
 .wrapper p {
   margin: 0;
-  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -90,8 +89,8 @@ border-bottom: none;
 }
 
 .profile_photo {
-  max-width: 40px;
-  max-height: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   display: block;
   position: relative;
@@ -130,6 +129,7 @@ border-bottom: none;
 .tweet_footer .row {
   width: 100%;
 }
+
 .tweet_footer .icon {
   font-size: 13px;
 }
@@ -140,7 +140,6 @@ border-bottom: none;
 
 .tweet_footer--last .icon {
   max-width: fit-content;
-  margin-right: 0 !important;
 }
 
 .tweet_reply--first {
@@ -256,4 +255,19 @@ border-bottom: none;
 
 .icon--views {
   background-image: url("https://images.squidge.org/images/2026/09/26/icon_views.png");
+}
+
+
+.icon--bookmarks {
+  background-image: url("https://images.squidge.org/images/2026/09/28/icon_test.png");
+}
+
+
+.icon--more {
+  background-image: url("/images/icon_more.png");
+}
+
+.tweet_header {
+  display: flex;
+  justify-content: space-between;
 }
