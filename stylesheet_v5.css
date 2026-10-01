@@ -8,6 +8,9 @@ body {
 
 hr {
   margin: 3em 0;
+  border: 0;
+  background-color: #d9d9d9;
+  height: 3px;
 }
 
 .row {
@@ -19,7 +22,6 @@ hr {
   display: flex;
   flex-direction: column;
 }
-
 
 .displayname {
   font-weight: bold;
@@ -127,7 +129,7 @@ border-bottom: none;
 
 .tweet_footer .row, .account_userMeta .row {
   width: 100%;
-  align-items:center;
+  align-items: center;
 }
 
 .tweet_footer--last {
@@ -250,12 +252,12 @@ border-bottom: none;
   background-image: url("https://images.squidge.org/images/2026/09/30/icon_retweets-filled.png");
 }
 
-.icon--bookmark {
+.icon--bookmarks {
   background-image: url("https://images.squidge.org/images/2026/09/29/icon_bookmarks-unsaved.png");
   margin-right:0 !important;
 }
 
-.icon--bookmark-saved {
+.icon--bookmarks-saved {
   background-image: url("https://images.squidge.org/images/2026/09/29/icon_bookmarks-saved.png");
   margin-right:0 !important;
 }
@@ -329,9 +331,16 @@ border-bottom: none;
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: auto;
   justify-content: space-between;
+  margin-bottom: 16px !important;
 }
 
-.gallery--2x img {
-  width: 49%;
+.gallery--2x p:first-child {
+  margin-right: 8px;
+}
+
+.gallery--2x .tweet_img {
+  width: 100%;
+  margin-bottom: 0 !important;
 }
