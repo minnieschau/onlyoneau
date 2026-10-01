@@ -7,7 +7,7 @@ body {
 }
 
 hr {
-  margin: 4em 0;
+  margin: 3em 0;
 }
 
 .row {
@@ -20,11 +20,6 @@ hr {
   flex-direction: column;
 }
 
-.icon {
-  height: 1.2em;
-  width: auto;
-  margin-right: 4px !important;
-}
 
 .displayname {
   font-weight: bold;
@@ -36,7 +31,7 @@ hr {
 
 .date,
 .tweet_footer p {
-  font-size: 13px !important;
+  font-size: 14px !important;
 }
 .color--lightgrey {
   color: #d9d9d9;
@@ -50,14 +45,21 @@ hr {
   color: #1d9bf0;
 }
 
+.color--pink {
+  color: #FF0081;
+}
+
+.color--green {
+  color: #00BD76;
+}
+
 .font--smaller {
   font-size: 0.8em;
 }
 
 .font--larger {
-  font-size: 1.25em;
+  font-size: 20px !important;
 }
-
 
 /* containers */
 
@@ -70,6 +72,7 @@ hr {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  line-height: 0 !important;
 }
 
 .wrapper p {
@@ -84,18 +87,9 @@ border-bottom: none;
 
 .container_box {
   margin: 0;
-  padding: 12px;
+  padding: 16px;
   display: flex;
   border-bottom: 1px solid #d9d9d9;
-}
-
-.profile_photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  display: block;
-  position: relative;
-  z-index: 2;
 }
 
 .tweet_content {
@@ -113,7 +107,7 @@ border-bottom: none;
 }
 
 .text_linebreak {
-  margin-top: 16px !important;
+  margin-top: 12px !important;
 }
 
 .tweet_img {
@@ -125,26 +119,22 @@ border-bottom: none;
 
 .tweet_footer {
   display: flex;
+}  
+
+.tweet_footer p {
+  line-height: 0 !important;
 }
 
-.tweet_footer .row {
+.tweet_footer .row, .account_userMeta .row {
   width: 100%;
-}
-
-.tweet_footer .icon {
-  font-size: 13px;
+  align-items:center;
 }
 
 .tweet_footer--last {
   max-width: fit-content;
 }
 
-.tweet_footer--last .icon {
-  max-width: fit-content;
-}
-
 .tweet_reply--first {
-  padding-top: 16px;
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -157,7 +147,7 @@ border-bottom: none;
 
 .tweet_reply--first .tweet_footer,
 .tweet_reply--between .tweet_footer {
-  padding-bottom: 16px;
+  padding-bottom: 24px;
 }
 
 .tweet_reply--first .tweet_content,
@@ -172,7 +162,7 @@ border-bottom: none;
 .tweet_replyTo {
   color: #4F6572;
   font-size: 13px !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 12px !important;
 }
 
 
@@ -186,6 +176,7 @@ border-bottom: none;
 
 .account_header img {
   width: 100%;
+  margin-bottom: 4px;;
 }
 
 .account_userNames,
@@ -227,48 +218,120 @@ border-bottom: none;
   height: 10px;
 }
 
+/*-- icons --*/
 
-.icons-test >* span {
-  width: 14px;
-  height: 14px;
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px !important;
   background-size: 100%;
-  margin-right: 4px;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align:text-bottom;
 }
 
-
 .icon--comments {
-  background-image: url("https://images.squidge.org/images/2026/09/26/icon_comments.png");
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_comments.png");
 }
-
 
 .icon--retweets {
-  background-image: url("https://images.squidge.org/images/2026/09/26/icon_retweets.png");
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_retweets.png");
 }
-
 
 .icon--likes {
-  background-image: url("https://images.squidge.org/images/2026/09/26/icon_likes.png");
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_likes.png");
 }
 
-
-.icon--views {
-  background-image: url("https://images.squidge.org/images/2026/09/26/icon_views.png");
+.icon--likes-filled {
+  background-image: url("https://images.squidge.org/images/2026/09/30/icon_likes-filled.png");
 }
 
-
-.icon--bookmarks {
-  background-image: url("https://images.squidge.org/images/2026/09/28/icon_test.png");
+.icon--retweets-filled {
+  background-image: url("https://images.squidge.org/images/2026/09/30/icon_retweets-filled.png");
 }
 
+.icon--bookmark {
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_bookmarks-unsaved.png");
+  margin-right:0 !important;
+}
+
+.icon--bookmark-saved {
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_bookmarks-saved.png");
+  margin-right:0 !important;
+}
 
 .icon--more {
-  background-image: url("images/icon_more.png");
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_more.png");
+  margin-top:4px !important;
+  margin-right: 0 !important;
+}
+
+.icon--location {
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_location.png");
+}
+
+.icon--calendar {
+  background-image: url("https://images.squidge.org/images/2026/09/29/icon_calendar.png");
 }
 
 .tweet_header {
   display: flex;
   justify-content: space-between;
+  align-items:start;
+}
+
+.margin-right--4 {
+  margin-right: 4px !important;
+}
+
+.margin--tweet {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
+.profile_photo {
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border-radius: 100%;
+}
+
+.pfp_shotaro {
+  background-image: url("https://images.squidge.org/images/2026/09/26/pfp_shotaro.png");
+}
+
+.pfp_sungchan {
+  background-image: url("https://images.squidge.org/images/2026/09/26/pfp_sungchan.png");
+}
+
+.pfp_eunseok {
+  background-image: url("https://images.squidge.org/images/2026/09/26/pfp_eunseok.png");
+}
+
+.pfp_sohee {
+  background-image: url("https://images.squidge.org/images/2026/09/26/pfp_sohee.png");
+}
+
+
+/*-- writing --*/
+.highlight {
+  background: rgb(252, 212, 69, 50%);
+}
+
+.gallery--2x {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.gallery--2x img {
+  width: 49%;
 }
